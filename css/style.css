@@ -1,0 +1,255 @@
+
+body
+{
+	margin-bottom: 70px;
+}
+/***start overly****/
+/*start carousel*/
+.slide{
+  margin-top: 0;
+}
+.carousel-inne img{
+ max-height: 600px;
+}
+.slide .carousel-inner h2,
+.slide .carousel-inner p{
+  font-family: serif;
+  text-transform: uppercase;
+}
+.slide .carousel-inner p{
+font-size: 30px;
+}
+.slide .carousel-inner span{
+  font-family:serif;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #00dbff;
+}
+
+.slide .carousel-indicators{
+  bottom: 60px;
+}
+.slide .carousel-control-prev,
+.slide .carousel-control-next,
+  .slide .carousel-indicators li{
+  opacity: 1;
+}
+.slide .carousel-indicators li{
+  height: 12px;
+  width: 12px;
+  border-radius: 100%;
+  background-color: #fff0;
+  border: 2px solid white;
+}
+.carousel-caption{
+  bottom: 150px;
+  background-color:  rgba(0,0,0,0.3);
+}
+.slide .carousel-indicators >.active{
+  background-color: #17a2b8;
+  border: 2px solid  #17a2b8;
+}
+/*end carousel*/
+/*****end overly*****/
+.profile{
+  background-color:#1a2f44e6; 
+  height: auto;
+  margin-right:0;
+  margin-left: 0;  
+}
+.bg-dark {
+
+    background-color: #1a2f44 !important;
+
+}
+/* the border of the input in the form*/
+.bor{
+     border-top: hidden; 
+     border-right: hidden; 
+     border-left:  hidden; 
+     border-radius:0;
+     border-bottom-color: #72788a;
+}
+.welcom{
+     font-weight: bold;
+     font-style: italic;
+}
+/* the welcome speak*/
+ .description{
+background: url('../img/welcome.jpg');
+background-repeat: no-repeat;
+background-size: 600px 532px;
+padding: 160px 0px 0px 45px;
+width: 600px;
+height: 532px;
+color:#fff;
+text-align: center;
+font-family: i;
+ }
+ .description h5{
+  width: 150px;
+  margin: 0 auto;
+ }
+/* the all login/signUp form*/
+.foo{
+margin-top: 30px;
+box-shadow: 0 0 20px black;
+/*margin-left: 100px;*/
+padding: 0px;
+ }
+  
+.s-l-btn{
+  width: 200px;
+margin-bottom: 10px;
+margin-left: 80px;
+}
+.log-sub-btn{
+  margin-top: 50px;
+}
+ /* to mke  down the form*/
+ .form {
+    background-color: #fdffff;
+    font-family: t;
+    font-weight: bolder;
+}
+.Users-Liste{
+  color: white;
+  font-weight: bold;
+  font-size:40px;
+}
+
+/****** start overriding bootstrap ******/
+.btn-primary{
+height: calc(2.25rem + 2px);
+border-radius: 20px;
+color: #fff;
+background-color: #17a2b8;
+border-color: #17a2b8;
+}
+
+/* Active link*/
+.navbar-dark .navbar-nav .nav-link:hover, 
+.navbar-dark .navbar-nav .nav-link:focus{
+     color: #17a2b8;
+}
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+    color: #BBB;
+    min-width: 210px;
+    background-color: #343a40;
+    border-top:3px solid #16ccec; 
+}
+/* Navbar link*/
+.navbar-dark .navbar-nav .nav-link {
+    color: #ffffffbf;
+    padding-left: 6px;
+    font-size: 20px;
+}
+/*to make compennt away than the logo by 25px*/
+.navbar-brand{
+     font-size: 25px;
+     padding-right: 25px;
+
+}
+.navbar-toggler :not(.disabled){
+    border-color: #17a2b8;
+}
+.card-img-top{
+     max-height: 300px;
+}
+.navbar-brand >span{
+  font-size: 25px;
+  font-style: italic;
+}
+.navbar-brand span:first-child{
+color: white;
+font-weight: bold;
+}
+.navbar-brand span:last-child{
+     color:#17a2b8 ;
+}
+.pl-4, .px-4 {
+    padding-left: 5.5rem !important;
+}
+/* Style the Image Used to Trigger the Modal */
+#myImg {
+  margin: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#myImg:hover {opacity: 0.7;}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+/* Modal Content (Image) */
+.modal-contentt {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+/* Add Animation - Zoom in the Modal */
+.modal-contentt, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-contentt {
+    width: 100%;
+  }
+} 
+
+/****** end overriding bootstrap ******/
+/**start service****/
+.servise{
+  font-size: 30px;
+  color: white;
+  margin-bottom: 20px;
+}
+.servise span{
+  color: #17a2b8;
+}
+/***end servisce***/
